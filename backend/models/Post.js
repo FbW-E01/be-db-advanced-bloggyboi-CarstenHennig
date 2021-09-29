@@ -1,10 +1,11 @@
 import mongoose from "mongoose";
-import { commentSchema } from './Comment.js';
+import { commentSchema } from "./Comment.js";
 
 const postSchema = new mongoose.Schema({
   author: String,
   content: String,
   image: String,
+  tags: String,
   totalComments: { type: Number, default: 0 },
   comments: [commentSchema],
 });

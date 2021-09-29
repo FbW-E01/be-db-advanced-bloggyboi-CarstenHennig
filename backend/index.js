@@ -7,9 +7,9 @@ import Database from "./db.js";
 import Post from "./models/Post.js";
 
 // Read environment variables
-const dotenvResult = dotenv.config({ path: 'backend/.env' });
+const dotenvResult = dotenv.config({ path: ".env" });
 if (dotenvResult.error) {
-  console.log("ERROR when loading .env",dotenvResult.error);
+  console.log("ERROR when loading .env", dotenvResult.error);
   process.exit(1);
 }
 
@@ -40,7 +40,7 @@ app.get("/post/{postId}/comments", (req, res) => {
 });
 
 // TODO: Add endpoint for adding posts
-// TODO: Add endpoint for addingcomments 
+// TODO: Add endpoint for addingcomments
 
 app.use((req, res) => {
   res.status(404);

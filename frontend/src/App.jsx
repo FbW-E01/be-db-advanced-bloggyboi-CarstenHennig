@@ -6,9 +6,9 @@ export default function App() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8080/posts')
-      .then(response => response.json())
-      .then(posts => {
+    fetch("http://localhost:3000/posts")
+      .then((response) => response.json())
+      .then((posts) => {
         setPosts(posts);
         setLoading(false);
       });
@@ -20,7 +20,9 @@ export default function App() {
 
   return (
     <div className="posts">
-      {posts?.map(p => <Post key={p._id} post={p} />)}
+      {posts?.map((p) => (
+        <Post key={p._id} post={p} />
+      ))}
     </div>
   );
 }

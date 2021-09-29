@@ -1,6 +1,7 @@
 {
   "main": "index.js",
   "license": "ISC",
+  "type": "module",
   "scripts": {
     "start": "react-scripts start"
   },

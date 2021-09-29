@@ -6,21 +6,30 @@ This app is separated into a frontend and a backend. The idea is to simulate an 
 
 - First install the dependencies for the frontend and the backend
 - Start the frontend:
-    - `$ cd frontend`
-    - `$ npm start`
+  - `$ cd frontend`
+  - `$ npm start`cd .
 - Start the backend:
-    - `$ node backend/index.js`
+  - `$ node backend/index.js`
 
 # TASKS
 
 Add your answers directly here and code your solutions to the tasks normally.
 
 1. What are the `.env.example` files?
+   // Environment file
+
 2. What is the `requests.http` file?
+   // Connecting with server, requesting connection ('GET')
+
 3. What does the `requestlogger.js` do?
+   // Initializing (server) request
+
 4. MongoDB ObjectIDs contain data, for example a timestamp. Research how can you extract the timestamp from an ObjectId. What is the creation time included in this ObjectId: `6152cb1e7475555f04014741`?
+   // ObjectID("6152cb1e7475555f04014741").getTimestamp()
+
 5. Examine carefully exactly how the app currently works, spend at least 20 minutes (actually measure time!) reading and understanding all of the existing code and carefully looking at how it runs. Focus on the backend more than the frontend.
+
 6. Make it so that you can actually load all of the comments for a given post.
 7. Make it so that you can add a comment.
-8. *BONUS* Make it so that posts have their tags (#catsofdci for example) saved in the database as well, as an array of subdocuments.
-9. *BONUS* Why should we start the backend like `$ node backend/index.js`?
+8. _BONUS_ Make it so that posts have their tags (#catsofdci for example) saved in the database as well, as an array of subdocuments.
+9. _BONUS_ Why should we start the backend like `$ node backend/index.js`?
